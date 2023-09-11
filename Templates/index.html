@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Citaciones existentes</title>
+</head>
+<body>
+    <h1>Datos obtenidos</h1>
+    <ul>
+        {% for dato in datos %}
+            <li>
+                Número de infracción: {{dato.infraccion}},
+                Entidad responsable: {{dato.entidad}},
+                No. citación: {{dato.citacion}},
+                Placa del vehículo: {{dato.placa}},
+                Fecha de emisión: {{dato.fechaemision}},
+                Fecha de notificación: {{dato.fechanotificacion}},
+                Sanción: {{dato.sancion}},
+                Puntos reducidos: {{dato.puntos}},
+                Valor multa: {{dato.multa}},
+                Fecha remisión: {{dato.remision}},
+                Total a pagar: {{dato.totalpagar}},
+                Articulo infringido: {{dato.articulo}}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
